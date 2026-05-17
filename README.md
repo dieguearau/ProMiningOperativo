@@ -1,195 +1,232 @@
 # Detección de Ineficiencias Operativas en Órdenes de Trabajo
 
-<p align="center">
-  <img src="assets/img/sankey_flujo_operativo.png" width="950">
-</p>
+## Process Mining aplicado a operaciones de servicio
 
-<p align="center">
-  Simulación y análisis de procesos operativos utilizando técnicas de process mining y analítica operacional.
-</p>
+Este proyecto presenta un análisis de procesos operativos basado en *event logs* de órdenes de trabajo (OT), utilizando técnicas de **Process Mining**, análisis operacional y simulación de mejoras.
 
----
+La idea del proyecto surge a partir de una experiencia real observada en operaciones de servicio técnico, donde existían demoras, reprocesos y problemas de coordinación entre áreas que impactaban directamente sobre el cumplimiento de SLA y los tiempos de resolución.
 
-# Objetivo del proyecto
+A partir de esa experiencia, se buscó responder preguntas como:
 
-Este proyecto busca detectar ineficiencias operativas en el ciclo de vida de órdenes de trabajo mediante:
+* ¿Dónde se generan realmente las demoras?
+* ¿Qué actividades consumen más tiempo?
+* ¿Qué loops o reprocesos impactan más sobre el SLA?
+* ¿Qué parte del problema proviene de coordinación y no de ejecución técnica?
+* ¿Qué mejoras podrían generar mayor impacto operativo?
 
-* análisis de eventos operativos;
-* detección de loops y reprocesos;
-* análisis de lead time;
-* identificación de cuellos de botella;
-* evaluación de SLA;
-* simulación de mejoras operativas.
-
-El enfoque replica escenarios comunes en empresas de servicios, soporte técnico, logística y operaciones.
+El proyecto busca mostrar cómo un simple *event log* puede transformarse en una herramienta de diagnóstico operativo y soporte para iniciativas de mejora continua.
 
 ---
 
-# Problema de negocio
+# Objetivos del proyecto
 
-Muchas organizaciones poseen procesos operativos complejos donde las órdenes de trabajo atraviesan múltiples áreas y estados.
+El análisis se enfoca en:
 
-Aunque los sistemas registran eventos y trazabilidad, normalmente no existe una visión clara sobre:
-
-* dónde se generan las demoras;
-* qué loops impactan más;
-* qué actividades consumen más tiempo;
-* cómo afectan los reprocesos al SLA;
-* qué mejoras podrían generar mayor impacto.
-
-Este proyecto busca responder esas preguntas utilizando análisis de procesos sobre event logs simulados.
-
----
-
-# Principales funcionalidades
-
-* Simulación de event logs operativos.
-* Generación de órdenes de trabajo con múltiples flujos.
-* Simulación de loops y reprocesos.
-* Análisis de lead time.
-* Análisis de SLA.
-* Identificación de cuellos de botella.
-* Heatmaps operativos por día/hora.
-* Diagramas Sankey de flujo de proceso.
-* Pareto de tiempo acumulado.
-* Simulación de escenarios de mejora.
-* Generación de reporte ejecutivo en Quarto.
-
----
-
-# Flujo operativo simulado
-
-```text
-OT creada
-→ Validación inicial
-→ Clasificación de OT
-→ Asignación
-→ Agenda coordinada
-→ Trabajo iniciado
-→ Trabajo finalizado
-→ Validación de cierre
-→ OT cerrada
-```
-
-Con posibles loops asociados a:
-
-* Información incompleta.
-* Reagendamientos.
-* Falta de materiales.
-* Ejecución fallida.
-* Observaciones administrativas.
+* reconstruir el flujo operativo completo de las órdenes de trabajo;
+* identificar loops y reprocesos;
+* detectar cuellos de botella;
+* analizar lead time y cumplimiento de SLA;
+* medir impacto por tipo de ineficiencia;
+* visualizar concentración temporal de carga operativa;
+* priorizar oportunidades de mejora;
+* simular escenarios operativos mejorados.
 
 ---
 
 # Tecnologías utilizadas
 
-<p>
-  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"/>
-  <img src="https://img.shields.io/badge/dplyr-1f3b4d?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/ggplot2-4E7C7B?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Quarto-39729E?style=for-the-badge&logo=quarto&logoColor=white"/>
-  <img src="https://img.shields.io/badge/networkD3-C65D4A?style=for-the-badge"/>
+<p align="left">
+
+<img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"/>
+<img src="https://img.shields.io/badge/dplyr-1A162D?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/ggplot2-5C4EE5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Quarto-39729E?style=for-the-badge&logo=quarto&logoColor=white"/>
+<img src="https://img.shields.io/badge/openxlsx-1D6F42?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Process%20Mining-444444?style=for-the-badge"/>
+
 </p>
-
----
-
-# Principales análisis realizados
-
-## Lead time operacional
-
-Análisis del tiempo total transcurrido desde la creación hasta el cierre de una OT.
-
-<p align="center">
-  <img src="assets/img/distribucion_lead_time.png" width="800">
-</p>
-
----
-
-## Impacto de loops y reprocesos
-
-Detección de órdenes que regresan a etapas anteriores del flujo y su impacto sobre SLA y tiempo total.
-
-<p align="center">
-  <img src="assets/img/impacto_loops.png" width="800">
-</p>
-
----
-
-## Heatmap operativo
-
-Visualización de concentración de eventos por día y hora.
-
-<p align="center">
-  <img src="assets/img/heatmap_operacional.png" width="850">
-</p>
-
----
-
-## Pareto operacional
-
-Identificación de actividades que explican la mayor parte del tiempo total consumido.
-
-<p align="center">
-  <img src="assets/img/pareto_operacional.png" width="950">
-</p>
-
----
-
-## Simulación de mejoras
-
-Comparación entre escenario actual y escenario mejorado mediante reducción de loops críticos.
-
-<p align="center">
-  <img src="assets/img/sla_actual_vs_mejorado.png" width="750">
-</p>
-
----
-
-# Principales insights
-
-* Los loops representan una parte significativa del lead time total.
-* Los reagendamientos y problemas de materiales generan los mayores impactos operativos.
-* Existen actividades que concentran gran parte del tiempo acumulado.
-* La simulación de mejoras permite reducir incumplimientos de SLA y tiempo operativo total.
 
 ---
 
 # Estructura del proyecto
 
 ```text
-process-mining-operacional/
-│
-├── assets/
-│   └── img/
+Proyecto/
 │
 ├── datos/
-│   ├── event_log_simulado.csv
-│   ├── ot_base_simulada.csv
-│   └── usuarios_simulados.csv
 │
 ├── outputs/
 │   ├── graficos/
 │   ├── html/
 │   └── tablas/
 │
+├── reporte/
+│   └── reporte_proceso_ot.qmd
+│
 ├── scripts/
 │   ├── eventlogs_simulacion.R
 │   ├── eventlogs_analisis.R
-│   ├── eventlogs_visualizacion.R
-│   └── eventlogs_simulacion_optimizacion.R
-│
-├── reporte/
-│   ├── reporte_proceso_ot.qmd
-│   └── reporte_proceso_ot.html
+│   ├── simulacion_mejoras.R
+│   └── run_process.R
 │
 └── README.md
 ```
 
 ---
 
-# Reporte ejecutivo
+# ⚠️ Disclaimer de datos
 
-El proyecto incluye un reporte ejecutivo desarrollado en Quarto:
+Este repositorio **no utiliza event logs reales**.
+
+Con el objetivo de preservar confidencialidad y evitar exposición de información operativa sensible, se desarrolló un script de simulación llamado:
+
+```r
+eventlogs_simulacion.R
+```
+
+Este script genera artificialmente un flujo completo de órdenes de trabajo incluyendo:
+
+* actividades;
+* timestamps;
+* áreas involucradas;
+* usuarios;
+* SLA;
+* loops operativos;
+* reprocesos;
+* reagendamientos;
+* problemas de materiales;
+* validaciones administrativas.
+
+La simulación fue diseñada para representar comportamientos operativos realistas observados en procesos de servicio técnico.
+
+---
+
+# Principales análisis realizados
+
+## Distribución del lead time
+
+Se analiza el tiempo total transcurrido desde la creación hasta el cierre de cada OT.
+
+<p align="center">
+<img src="outputs/graficos/01_distribucion_lead_time.png" width="800">
+</p>
+
+El análisis permite detectar dispersión operativa, casos extremos y órdenes con tiempos de resolución anormalmente altos.
+
+---
+
+## Impacto de loops operativos
+
+Se compara el desempeño de órdenes con y sin reprocesos.
+
+<p align="center">
+<img src="outputs/graficos/02_lead_time_por_loops.png" width="800">
+</p>
+
+Los resultados muestran que los loops representan uno de los principales factores de incremento del lead time y deterioro del SLA.
+
+---
+
+## Cuellos de botella por actividad
+
+Se identifican las actividades que concentran mayor tiempo acumulado.
+
+<p align="center">
+<img src="outputs/graficos/03_cuellos_por_actividad.png" width="800">
+</p>
+
+El análisis revela que gran parte del tiempo consumido proviene de coordinación y validaciones, más que de la ejecución técnica en sí misma.
+
+---
+
+## Impacto por tipo de loop
+
+Se cuantifica qué tipos de reproceso generan mayor impacto operativo.
+
+<p align="center">
+<img src="outputs/graficos/05_impacto_tipo_loop.png" width="800">
+</p>
+
+Los loops asociados a materiales y reagendamientos concentran la mayor parte del tiempo perdido.
+
+---
+
+## Concentración temporal de eventos
+
+Análisis de carga operativa por día y hora.
+
+<p align="center">
+<img src="outputs/graficos/06_heatmap_dia_hora.png" width="800">
+</p>
+
+Esto permite detectar posibles ventanas de saturación operativa y oportunidades de redistribución de capacidad.
+
+---
+
+## Pareto de tiempo por actividad
+
+Priorización de actividades según impacto acumulado.
+
+<p align="center">
+<img src="outputs/graficos/11_pareto_actividad.png" width="800">
+</p>
+
+Un subconjunto reducido de actividades explica gran parte del tiempo total del proceso.
+
+---
+
+## Simulación de mejoras operativas
+
+El proyecto incorpora una simulación de escenario mejorado para estimar impacto potencial antes de implementar cambios reales.
+
+<p align="center">
+<img src="outputs/graficos/15_sla_actual_vs_mejorado.png" width="700">
+</p>
+
+<p align="center">
+<img src="outputs/graficos/13_ahorro_por_tipo_loop.png" width="700">
+</p>
+
+Las mejoras simuladas incluyen:
+
+* reducción de reagendamientos;
+* disminución de loops por materiales;
+* optimización de validaciones;
+* reducción de tiempos de coordinación.
+
+---
+
+# Principales hallazgos
+
+* Los loops operativos representan una de las principales fuentes de ineficiencia.
+* Gran parte del lead time proviene de coordinación y espera, no de trabajo técnico efectivo.
+* Los problemas de materiales y reagendamientos generan alto impacto acumulado.
+* El análisis de percentiles permite detectar comportamientos extremos invisibles en los promedios.
+* Pequeñas mejoras focalizadas pueden generar reducciones relevantes sobre SLA y horas consumidas.
+
+---
+
+# Cómo ejecutar el proyecto
+
+Desde el directorio principal ejecutar:
+
+```r
+source("scripts/run_process.R")
+```
+
+El pipeline:
+
+1. genera los event logs simulados;
+2. ejecuta análisis operacionales;
+3. genera visualizaciones;
+4. ejecuta simulación de mejoras;
+5. renderiza automáticamente el reporte en Quarto.
+
+---
+
+# Reporte final
+
+El reporte completo se genera automáticamente en formato HTML utilizando Quarto:
 
 ```text
 reporte/reporte_proceso_ot.html
@@ -214,6 +251,7 @@ El enfoque puede adaptarse a:
 
 # Autor
 
-Diego Araujo
+**Diego A.**
 
-Proyecto desarrollado como portfolio de analítica operacional y process mining aplicado a operaciones.
+Licenciado en Estadística
+Data Analytics | Process Mining | Optimización Operativa | IA Aplicada | R Programming
