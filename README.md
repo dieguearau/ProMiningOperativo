@@ -219,7 +219,7 @@ Las mejoras simuladas incluyen:
 Desde el directorio principal ejecutar:
 
 ```r
-source("scripts/run_process.R")
+source("run_process.R")
 ```
 
 El pipeline:
@@ -237,7 +237,7 @@ El pipeline:
 El reporte completo se genera automáticamente en formato HTML utilizando Quarto:
 
 ```text
-reporte/reporte_proceso_ot.html
+docs/index.html
 ```
 
 ---
