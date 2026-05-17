@@ -18,9 +18,9 @@ El proyecto busca mostrar cómo un simple *event log* puede transformarse en una
 
 ---
 
-# 🚀 Live Demo
+# 📊 Reporte interactivo
 
-👉 **[Abrir reporte interactivo](https://dieguearau.github.io/ProMiningOperativo/)**
+👉 **[Abrir análisis completo](https://dieguearau.github.io/ProMiningOperativo/)**
 
 ---
 

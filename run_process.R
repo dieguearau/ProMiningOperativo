@@ -83,7 +83,7 @@ cat(" ---------------------------------------------\n",
     "---------------------------------------------\n")
 
 quarto::quarto_render(
-  input = "reporte/reporte_proceso_ot.qmd",
+  input = "docs/index.qmd",
   execute_dir = getwd()
 )
 
@@ -109,5 +109,5 @@ cat(
 )
 
 cat("\nReporte generado en:\n")
-cat("reporte/reporte_proceso_ot.html\n")
+cat("docs/index.html\n")
 
