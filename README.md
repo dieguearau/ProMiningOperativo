@@ -18,6 +18,12 @@ El proyecto busca mostrar cómo un simple *event log* puede transformarse en una
 
 ---
 
+# 🚀 Live Demo
+
+👉 **[Abrir reporte interactivo](https://tuusuario.github.io/process-mining-ot/)**
+
+---
+
 # Objetivos del proyecto
 
 El análisis se enfoca en:
