@@ -186,7 +186,7 @@ kpis_comparativos <- data.frame(
   )
 )
 
-# ------- Ahorro por tipo de loop -------------------------- ----
+# ------- Ahorro por tipo de loop ------------------------- ----
 
 ahorro_por_tipo_loop <- event_log_mejorado %>%
   filter(es_loop == 1) %>%
@@ -211,7 +211,7 @@ ahorro_por_tipo_loop <- event_log_mejorado %>%
   ) %>%
   arrange(desc(horas_ahorradas))
 
-# ------- Ahorro por actividad ----------------------------- ----
+# ------- Ahorro por actividad ---------------------------- ----
 
 ahorro_por_actividad <- event_log_mejorado %>%
   group_by(actividad) %>%
@@ -238,7 +238,7 @@ ahorro_por_actividad <- event_log_mejorado %>%
   ) %>%
   arrange(desc(horas_ahorradas))
 
-# ------- Comparativos por dimensiones --------------------- ----
+# ------- Comparativos por dimensiones -------------------- ----
 
 comparativo_prioridad <- comparativo_ot %>%
   group_by(prioridad) %>%
@@ -279,7 +279,7 @@ comparativo_zona <- comparativo_ot %>%
     .groups = "drop"
   )
 
-# ------- Exportacion Excel -------------------------------- ----
+# ------- Exportacion Excel ------------------------------- ----
 
 wb <- createWorkbook()
 
@@ -331,7 +331,7 @@ g_box_comparativo <- ggplot(
   comparativo_long,
   aes(x = escenario, y = lead_time_horas)
 ) +
-  geom_boxplot(outlier.alpha = 0.3) +
+  geom_boxplot(outlier.alpha = 0.3, fill = "#436E43") +
   labs(
     title = "Comparación del lead time: escenario actual vs mejorado",
     x = "",
@@ -350,7 +350,7 @@ g_ahorro_loop <- ggplot(
   ahorro_por_tipo_loop,
   aes(x = reorder(tipo_loop, horas_ahorradas), y = horas_ahorradas)
 ) +
-  geom_col() +
+  geom_col(fill = "#5b8c5a") +
   geom_text(
     aes(label = round(horas_ahorradas, 0)),
     hjust = -0.15,
@@ -375,7 +375,7 @@ ggsave(
 g_ahorro_actividad <- ahorro_por_actividad %>%
   filter(horas_ahorradas > 0) %>%
   ggplot(aes(x = reorder(actividad, horas_ahorradas), y = horas_ahorradas)) +
-  geom_col() +
+  geom_col(fill = "#308030") +
   geom_text(
     aes(label = round(horas_ahorradas, 0)),
     hjust = -0.15,
@@ -409,7 +409,7 @@ g_sla_comparativo <- ggplot(
   sla_comparativo,
   aes(x = escenario, y = fuera_sla_pct)
 ) +
-  geom_col() +
+  geom_col(fill = "#308030") +
   geom_text(
     aes(label = paste0(round(fuera_sla_pct, 1), "%")),
     vjust = -0.3,

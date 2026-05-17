@@ -567,8 +567,7 @@ ggplot(
   ) +
   geom_point(
     aes(y = porcentaje_acumulado * max(duracion_total_horas)),
-    size = 2,
-    color = "#C65D4A"
+    size = 2
   ) +
   geom_text(
     aes(
@@ -646,7 +645,7 @@ if (exists("comparativo_ot")) {
   )
   
   ggplot(sla_comparativo, aes(x = escenario, y = fuera_sla_pct)) +
-    geom_col(fill = "#2C5F8A") +
+    geom_col(fill = "#436E43") +
     geom_text(
       aes(label = paste0(round(fuera_sla_pct, 1), "%")),
       vjust = -0.3,

@@ -1289,7 +1289,7 @@ OT_00124,OT_00124_EV_002,2026-03-18T06:54:59Z,Validación inicial,Backoffice ope
 OT_00124,OT_00124_EV_003,2026-03-18T15:27:41Z,Solicitud de información adicional,Atención al cliente,USR_06,Reparación,Media,Sur,Call center,1,Información incompleta,8.54,96,Cerrada,3,2026-03-18,miércoles,12
 OT_00124,OT_00124_EV_004,2026-03-19T00:00:23Z,Validación inicial,Backoffice operativo,USR_27,Reparación,Media,Sur,Call center,1,Información incompleta,8.54,96,Cerrada,4,2026-03-19,miércoles,21
 OT_00124,OT_00124_EV_005,2026-03-19T00:27:23Z,Clasificación de WO,Backoffice operativo,USR_22,Reparación,Media,Sur,Call center,0,NA,0.45,96,Cerrada,5,2026-03-19,miércoles,21
-OT_00124,OT_00124_EV_006,2026-03-19T06:34:35Z,Reparación,Backoffice operativo,USR_12,Reparación,Media,Sur,Call center,0,NA,6.12,96,Cerrada,6,2026-03-19,jueves,3
+OT_00124,OT_00124_EV_006,2026-03-19T06:34:35Z,Asignación,Backoffice operativo,USR_12,Reparación,Media,Sur,Call center,0,NA,6.12,96,Cerrada,6,2026-03-19,jueves,3
 OT_00124,OT_00124_EV_007,2026-03-19T07:24:23Z,Agenda coordinada,Backoffice operativo,USR_22,Reparación,Media,Sur,Call center,0,NA,0.83,96,Cerrada,7,2026-03-19,jueves,4
 OT_00124,OT_00124_EV_008,2026-03-19T07:35:47Z,Trabajo iniciado,Técnico de campo,USR_03,Reparación,Media,Sur,Call center,0,NA,0.19,96,Cerrada,8,2026-03-19,jueves,4
 OT_00124,OT_00124_EV_009,2026-03-19T09:50:47Z,Trabajo finalizado,Técnico de campo,USR_23,Reparación,Media,Sur,Call center,0,NA,2.25,96,Cerrada,9,2026-03-19,jueves,6
@@ -3290,7 +3290,7 @@ OT_00318,OT_00318_EV_009,2026-02-20T07:01:37Z,WO cerrada,Backoffice operativo,US
 OT_00319,OT_00319_EV_001,2026-02-07T05:45:56Z,WO creada,Atención al cliente,USR_26,Mantenimiento,Baja,Sur,Comercial,0,NA,0,168,Cerrada,1,2026-02-07,sábado,2
 OT_00319,OT_00319_EV_002,2026-02-07T07:13:32Z,Validación inicial,Backoffice operativo,USR_07,Mantenimiento,Baja,Sur,Comercial,0,NA,1.46,168,Cerrada,2,2026-02-07,sábado,4
 OT_00319,OT_00319_EV_003,2026-02-07T08:09:56Z,Clasificación de WO,Backoffice operativo,USR_17,Mantenimiento,Baja,Sur,Comercial,0,NA,0.94,168,Cerrada,3,2026-02-07,sábado,5
-OT_00319,OT_00319_EV_004,2026-02-07T17:17:44Z,Asignación,Backoffice operativo,USR_22,Mantenimiento,Baja,Sur,Comercial,0,NA,9.13,168,Cerrada,4,2026-02-07,sábado,14
+OT_00319,OT_00319_EV_004,2026-02-07T17:17:44Z,Instalació,Backoffice operativo,USR_22,Mantenimiento,Baja,Sur,Comercial,0,NA,9.13,168,Cerrada,4,2026-02-07,sábado,14
 OT_00319,OT_00319_EV_005,2026-02-09T00:38:44Z,Agenda coordinada,Backoffice operativo,USR_07,Mantenimiento,Baja,Sur,Comercial,0,NA,31.35,168,Cerrada,5,2026-02-09,domingo,21
 OT_00319,OT_00319_EV_006,2026-02-09T07:47:44Z,Trabajo iniciado,Técnico de campo,USR_18,Mantenimiento,Baja,Sur,Comercial,0,NA,7.15,168,Cerrada,6,2026-02-09,lunes,4
 OT_00319,OT_00319_EV_007,2026-02-09T10:26:08Z,Trabajo finalizado,Técnico de campo,USR_03,Mantenimiento,Baja,Sur,Comercial,0,NA,2.64,168,Cerrada,7,2026-02-09,lunes,7
@@ -7398,7 +7398,7 @@ OT_00722,OT_00722_EV_009,2026-03-30T10:25:32Z,WO cerrada,Backoffice operativo,US
 OT_00723,OT_00723_EV_001,2026-03-29T02:40:34Z,WO creada,Atención al cliente,USR_01,Reparación,Media,Norte,Call center,0,NA,0,96,Cerrada,1,2026-03-29,sábado,23
 OT_00723,OT_00723_EV_002,2026-03-29T03:43:34Z,Validación inicial,Backoffice operativo,USR_02,Reparación,Media,Norte,Call center,0,NA,1.05,96,Cerrada,2,2026-03-29,domingo,0
 OT_00723,OT_00723_EV_003,2026-03-29T05:06:22Z,Solicitud de información adicional,Atención al cliente,USR_16,Reparación,Media,Norte,Call center,1,Información incompleta,1.38,96,Cerrada,3,2026-03-29,domingo,2
-OT_00723,OT_00723_EV_004,2026-03-29T06:29:10Z,Atención al client,Backoffice operativo,USR_02,Reparación,Media,Norte,Call center,1,Información incompleta,1.38,96,Cerrada,4,2026-03-29,domingo,3
+OT_00723,OT_00723_EV_004,2026-03-29T06:29:10Z,Validación inicial,Backoffice operativo,USR_02,Reparación,Media,Norte,Call center,1,Información incompleta,1.38,96,Cerrada,4,2026-03-29,domingo,3
 OT_00723,OT_00723_EV_005,2026-03-29T06:57:22Z,Clasificación de WO,Backoffice operativo,USR_07,Reparación,Media,Norte,Call center,0,NA,0.47,96,Cerrada,5,2026-03-29,domingo,3
 OT_00723,OT_00723_EV_006,2026-03-29T10:56:10Z,Asignación,Backoffice operativo,USR_17,Reparación,Media,Norte,Call center,0,NA,3.98,96,Cerrada,6,2026-03-29,domingo,7
 OT_00723,OT_00723_EV_007,2026-03-29T13:08:46Z,Agenda coordinada,Backoffice operativo,USR_12,Reparación,Media,Norte,Call center,0,NA,2.21,96,Cerrada,7,2026-03-29,domingo,10

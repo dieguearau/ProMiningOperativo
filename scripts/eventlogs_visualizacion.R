@@ -253,7 +253,7 @@ g_box_loop <- ggplot(
   ot_base,
   aes(x = grupo_loop, y = lead_time_horas)
 ) +
-  geom_boxplot(outlier.alpha = 0.35) +
+  geom_boxplot(outlier.alpha = 0.35, fill = "#C65D4A") +
   labs(
     title = "Lead time de OT con y sin loops",
     x = "",
@@ -282,7 +282,7 @@ g_sla_loop <- ggplot(
   sla_loop,
   aes(x = grupo_loop, y = fuera_sla_pct)
 ) +
-  geom_col() +
+  geom_col(fill = "#C65D4A") +
   geom_text(
     aes(label = paste0(round(fuera_sla_pct, 1), "%")),
     vjust = -0.3
@@ -319,7 +319,7 @@ g_ranking_loops <- ggplot(
   ranking_loops,
   aes(x = reorder(tipo_loop, duracion_total_horas), y = duracion_total_horas)
 ) +
-  geom_col() +
+  geom_col(fill = "#C65D4A") +
   geom_text(
     aes(label = round(duracion_total_horas, 0)),
     hjust = -0.15,
@@ -398,10 +398,10 @@ g_pareto <- ggplot(
   pareto_actividad,
   aes(x = reorder(actividad, -duracion_total_horas))
 ) +
-  geom_col(aes(y = duracion_total_horas)) +
+  geom_col(aes(y = duracion_total_horas), fill = "#4E7C7B") +
   geom_line(
     aes(y = porcentaje_acumulado * max(duracion_total_horas), group = 1),
-    linewidth = 1
+    linewidth = 1, color = "#C65D4A"
   ) +
   geom_point(
     aes(y = porcentaje_acumulado * max(duracion_total_horas)),
