@@ -52,7 +52,7 @@ El análisis se enfoca en:
 
 </p>
 
-(el proyecto fue desarrollado en `R` debido a que el caso original y gran parte del ecosistema analítico utilizado en el contexto operativo ya se encontraban implementados en dicho lenguaje, sin embargo, el enfoque y la lógica del proyecto son completamente reproducibles en `Python`) 
+(el proyecto fue desarrollado en `R` debido a que el caso original y gran parte del ecosistema analítico utilizado en el contexto operativo ya se encontraban implementados en dicho lenguaje, sin embargo, el enfoque y la lógica del proyecto son completamente reproducibles en `Python`).
 
 ---
 
