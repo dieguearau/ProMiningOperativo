@@ -387,7 +387,7 @@ ggsave(
 )
 
 g_loops <- ggplot(impacto_loops_cantidad, aes(x = bucket_loops, y = lead_time_promedio)) +
-  geom_col(fill = "#C65D4A") +
+  geom_col(fill = "#4E7C7B") +
   labs(
     title = "Lead time promedio según cantidad de loops",
     x = "Cantidad de loops",
@@ -405,7 +405,7 @@ ggsave(
 g_cuellos <- cuellos_por_actividad %>%
   slice_max(duracion_total_horas, n = 10) %>%
   ggplot(aes(x = reorder(actividad, duracion_total_horas), y = duracion_total_horas)) +
-  geom_col(fill = "#2C5F8A") +
+  geom_col(fill = "#4E7C7B") +
   coord_flip() +
   labs(
     title = "Top actividades por tiempo total acumulado",
@@ -422,7 +422,7 @@ ggsave(
 )
 
 g_area <- ggplot(analisis_por_area, aes(x = reorder(area, duracion_total_horas), y = duracion_total_horas)) +
-  geom_col(fill = "#465C78") +
+  geom_col(fill = "#4E7C7B") +
   coord_flip() +
   labs(
     title = "Tiempo total acumulado por área",
@@ -442,7 +442,7 @@ g_tipo_loop <- ggplot(
   impacto_por_tipo_loop,
   aes(x = reorder(tipo_loop, duracion_total_horas), y = duracion_total_horas)
 ) +
-  geom_col(fill = "#D63729") +
+  geom_col(fill = "#4E7C7B") +
   coord_flip() +
   labs(
     title = "Impacto total por tipo de loop",

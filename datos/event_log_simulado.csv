@@ -3290,7 +3290,7 @@ OT_00318,OT_00318_EV_009,2026-02-20T07:01:37Z,WO cerrada,Backoffice operativo,US
 OT_00319,OT_00319_EV_001,2026-02-07T05:45:56Z,WO creada,Atención al cliente,USR_26,Mantenimiento,Baja,Sur,Comercial,0,NA,0,168,Cerrada,1,2026-02-07,sábado,2
 OT_00319,OT_00319_EV_002,2026-02-07T07:13:32Z,Validación inicial,Backoffice operativo,USR_07,Mantenimiento,Baja,Sur,Comercial,0,NA,1.46,168,Cerrada,2,2026-02-07,sábado,4
 OT_00319,OT_00319_EV_003,2026-02-07T08:09:56Z,Clasificación de WO,Backoffice operativo,USR_17,Mantenimiento,Baja,Sur,Comercial,0,NA,0.94,168,Cerrada,3,2026-02-07,sábado,5
-OT_00319,OT_00319_EV_004,2026-02-07T17:17:44Z,Instalació,Backoffice operativo,USR_22,Mantenimiento,Baja,Sur,Comercial,0,NA,9.13,168,Cerrada,4,2026-02-07,sábado,14
+OT_00319,OT_00319_EV_004,2026-02-07T17:17:44Z,Asignación,Backoffice operativo,USR_22,Mantenimiento,Baja,Sur,Comercial,0,NA,9.13,168,Cerrada,4,2026-02-07,sábado,14
 OT_00319,OT_00319_EV_005,2026-02-09T00:38:44Z,Agenda coordinada,Backoffice operativo,USR_07,Mantenimiento,Baja,Sur,Comercial,0,NA,31.35,168,Cerrada,5,2026-02-09,domingo,21
 OT_00319,OT_00319_EV_006,2026-02-09T07:47:44Z,Trabajo iniciado,Técnico de campo,USR_18,Mantenimiento,Baja,Sur,Comercial,0,NA,7.15,168,Cerrada,6,2026-02-09,lunes,4
 OT_00319,OT_00319_EV_007,2026-02-09T10:26:08Z,Trabajo finalizado,Técnico de campo,USR_03,Mantenimiento,Baja,Sur,Comercial,0,NA,2.64,168,Cerrada,7,2026-02-09,lunes,7

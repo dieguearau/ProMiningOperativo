@@ -331,7 +331,7 @@ g_box_comparativo <- ggplot(
   comparativo_long,
   aes(x = escenario, y = lead_time_horas)
 ) +
-  geom_boxplot(outlier.alpha = 0.3, fill = "#436E43") +
+  geom_boxplot(outlier.alpha = 0.3, fill = "#B3C9B7") +
   labs(
     title = "Comparación del lead time: escenario actual vs mejorado",
     x = "",
@@ -350,7 +350,7 @@ g_ahorro_loop <- ggplot(
   ahorro_por_tipo_loop,
   aes(x = reorder(tipo_loop, horas_ahorradas), y = horas_ahorradas)
 ) +
-  geom_col(fill = "#5b8c5a") +
+  geom_col(fill = "#B3C9B7") +
   geom_text(
     aes(label = round(horas_ahorradas, 0)),
     hjust = -0.15,
@@ -375,7 +375,7 @@ ggsave(
 g_ahorro_actividad <- ahorro_por_actividad %>%
   filter(horas_ahorradas > 0) %>%
   ggplot(aes(x = reorder(actividad, horas_ahorradas), y = horas_ahorradas)) +
-  geom_col(fill = "#308030") +
+  geom_col(fill = "#B3C9B7") +
   geom_text(
     aes(label = round(horas_ahorradas, 0)),
     hjust = -0.15,
@@ -409,7 +409,7 @@ g_sla_comparativo <- ggplot(
   sla_comparativo,
   aes(x = escenario, y = fuera_sla_pct)
 ) +
-  geom_col(fill = "#308030") +
+  geom_col(fill = "#B3C9B7") +
   geom_text(
     aes(label = paste0(round(fuera_sla_pct, 1), "%")),
     vjust = -0.3,

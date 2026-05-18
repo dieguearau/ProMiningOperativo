@@ -575,8 +575,7 @@ ggplot(
       label = percent(porcentaje_acumulado, accuracy = 1)
     ),
     vjust = -0.7,
-    size = 3.2,
-    color = "#C65D4A"
+    size = 2.8
   ) +
   scale_y_continuous(
     name = "Horas acumuladas",
